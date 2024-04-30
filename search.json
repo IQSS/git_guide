@@ -122,7 +122,7 @@
     "href": "command_line.html",
     "title": "7  Command Line Arguments",
     "section": "",
-    "text": "Additional arguments in the command line include:\n\n\n\n\n\n\n\nCommand\nFunction\n\n\n\n\ngit add new_file\nTells git to include a new file on your disk, in the remote repository. Then commit and push as above.\n\n\ngit status\nTells you if your local version is up-to-date compared with the version on GitHub.\n\n\ngit log -p\n-p is patch or diff\n\n\ngit log -p HEAD..origin/master\nWhat changed remotely?\n\n\ngit commit . -v\nWhat is in your commit?\n\n\ngitk\nA GUI with a git file map\n\n\ngit &lt;command&gt; –help\nProvides help for the specific command\n\n\ngit pull –rebase\nAvoids merge commits\n\n\ngit blame &lt;filename&gt;\nTo see who last edited each line\n\n\n\nFor even more commands, see here.",
+    "text": "Additional arguments in the command line include:\n\n\n\n\n\n\n\nCommand\nFunction\n\n\n\n\ngit add new_file\nTells git to include a new file on your disk, in the remote repository. Then commit and push as above.\n\n\ngit status\nTells you if your local version is up-to-date compared with the version on GitHub.\n\n\ngit log -p\n-p is patch or diff\n\n\ngit log -p HEAD..origin/master\nWhat changed remotely?\n\n\ngit commit . -v\nWhat is in your commit?\n\n\ngitk\nA GUI with a git file map\n\n\ngit &lt;command&gt; –help\nProvides help for the specific command\n\n\ngit pull –rebase\nAvoids merge commits\n\n\ngit blame &lt;filename&gt;\nTo see who last edited each line\n\n\n\n For even more commands, see here.",
     "crumbs": [
       "Editing Existing Repositories",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Command Line Arguments</span>"
