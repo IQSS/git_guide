@@ -206,7 +206,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#when-you-are-the-only-one-editing-at-the-time" id="toc-when-you-are-the-only-one-editing-at-the-time" class="nav-link active" data-scroll-target="#when-you-are-the-only-one-editing-at-the-time"><span class="header-section-number">6.1</span> When you are the only one editing at the time:</a></li>
+  <li><a href="#when-someone-else-is-also-editing-a-different-part-of-the-file" id="toc-when-someone-else-is-also-editing-a-different-part-of-the-file" class="nav-link" data-scroll-target="#when-someone-else-is-also-editing-a-different-part-of-the-file"><span class="header-section-number">6.2</span> When someone else is also editing (a different part of the file):</a></li>
+  <li><a href="#when-someone-else-unfortunately-edits-the-same-line-as-you" id="toc-when-someone-else-unfortunately-edits-the-same-line-as-you" class="nav-link" data-scroll-target="#when-someone-else-unfortunately-edits-the-same-line-as-you"><span class="header-section-number">6.3</span> When someone else (unfortunately) edits the same line as you</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -230,9 +238,105 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TO DO</p>
+<section id="when-you-are-the-only-one-editing-at-the-time" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="when-you-are-the-only-one-editing-at-the-time"><span class="header-section-number">6.1</span> When you are the only one editing at the time:</h2>
+<p>When finished with an editing session:</p>
+<ol type="1">
+<li>
+Pull: in the terminal window, type “git pull”
+</li>
+<ol type="a">
+<li>
+This merges in any changes someone else made to the repo
+</li>
+</ol>
+<li>
+Commit: in the terminal window, type “git commit -am <your commit="" message="">”
+</your></li>
+<ol type="a">
+<li>
+This prepares your changes for uploading
+</li>
+</ol>
+<li>
+Push: in the terminal window, type “git push”
+</li>
+<ol type="a">
+<li>
+This uploads your changes to the GitHub repository
+</li>
+</ol>
+</ol>
+<p>Next time you are ready to edit: Pull, then edit as you like, then Commit and Push.</p>
+</section>
+<section id="when-someone-else-is-also-editing-a-different-part-of-the-file" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="when-someone-else-is-also-editing-a-different-part-of-the-file"><span class="header-section-number">6.2</span> When someone else is also editing (a different part of the file):</h2>
+<ol type="1">
+<li>
+Commit: in the terminal window, type “git commit -am <your commit="" message="">”
+</your></li>
+<ol type="a">
+<li>
+This protects your changes
+</li>
+</ol>
+<li>
+Pull: in the terminal window, type “git pull”
+</li>
+<ol type="a">
+<li>
+This merges in what your friend did
+</li>
+</ol>
+<li>
+Push: in the terminal window, type “git push”
+</li>
+<ol type="a">
+<li>
+This uploads your changes to the GitHub repository
+</li>
+</ol>
+</ol>
+<p>If you try pulling without committing, you will get an error.</p>
+</section>
+<section id="when-someone-else-unfortunately-edits-the-same-line-as-you" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="when-someone-else-unfortunately-edits-the-same-line-as-you"><span class="header-section-number">6.3</span> When someone else (unfortunately) edits the same line as you</h2>
+<p>You must resolve these differences!</p>
+<ol type="1">
+<li>
+Pull: in the terminal window, type “git pull”
+</li>
+<ol type="a">
+<li>
+You will get a “merge conflict” error message
+</li>
+</ol>
+<li>
+Edit your file. You will see something like this: <br> &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; <br> passage written by person 1 <br> =========== <br> passage written by person 2 <br> &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; <br>
+</li>
+<li>
+Remove one of the passages, as well as the &lt;&lt;&lt;, ===, and &gt;&gt;&gt; symbols.
+</li>
+<li>
+Commit: in the terminal window, type “git commit -am <your commit="" message="">”
+</your></li>
+<ol type="a">
+<li>
+This prepares your changes for uploading
+</li>
+</ol>
+<li>
+Push: in the terminal window, type “git push”
+</li>
+<ol type="a">
+<li>
+This uploads your changes to the GitHub repository
+</li>
+</ol>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
