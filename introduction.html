@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -235,7 +206,14 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">1.1</span> Background</a></li>
+  <li><a href="#key-idea" id="toc-key-idea" class="nav-link" data-scroll-target="#key-idea"><span class="header-section-number">1.2</span> Key Idea</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -259,10 +237,16 @@ window.Quarto = {
 </header>
 
 
-<p>Overleaf is a cloud-based <span class="math inline">\(\LaTeX\)</span> editor that simplifies the process of writing, editing, and collaborating on <span class="math inline">\(\LaTeX\)</span> documents. While it is not a super powerful text editor, its ease of use and collaboration features make it a favorite among many users. In fact, many graduate students and professors prefer Overleaf over all other editors.</p>
-<p>This starter guide will walk you through getting started in Overleaf, from signing up for an account, to creating projects, collaborating, and much more.</p>
+<section id="background" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="background"><span class="header-section-number">1.1</span> Background</h2>
+<p>Git is widely used open source software for versioning and collaborating on files to be edited; <a href="github.com">github.com</a> is a commercial service that makes git easier to use (and free for IQSS affiliates). Git is extremely sophisticated (for professional programmers), but most people only need a few easy commands. Github.com offers GUIs to do everything below, but I find the command line simpler and easier.</p>
+</section>
+<section id="key-idea" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="key-idea"><span class="header-section-number">1.2</span> Key Idea</h2>
+<p>Each project has a separate repository with all files to be shared stored on GitHub (e.g., https://github.com/iqss-research/gkbibtex). You can view and edit files on github.com directly. But it’s easier to also have a local (“cloned”) repository on your disk and use your own editing tools. You edit your repository and then push up changes to the remote repository and git syncs the two. We can both edit the same file at the same time (as long as we’re not editing the same line) and git will easily and transparently merge them (scary, but it works!). Every previous version and all edits are saved at GitHub and so it is safe and you can easily go get old versions too.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
