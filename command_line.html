@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Git and GitHub Starter Guide - 7&nbsp; Command Line</title>
+<title>Git and GitHub Starter Guide - 7&nbsp; Command Line Arguments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./editing.html">Editing Existing Repositories</a></li><li class="breadcrumb-item"><a href="./command_line.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./editing.html">Editing Existing Repositories</a></li><li class="breadcrumb-item"><a href="./command_line.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line Arguments</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./command_line.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line Arguments</span></span></a>
   </div>
 </li>
       </ul>
@@ -211,9 +211,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./editing.html">Editing Existing Repositories</a></li><li class="breadcrumb-item"><a href="./command_line.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./editing.html">Editing Existing Repositories</a></li><li class="breadcrumb-item"><a href="./command_line.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line Arguments</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Command Line Arguments</span></h1>
 </div>
 
 
@@ -230,7 +230,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TO DO</p>
+<p>Additional arguments in the command line include:</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>git add new_file</td>
+<td>Tells git to include a new file on your disk, in the remote repository. Then commit and push as above.</td>
+</tr>
+<tr class="even">
+<td>git status</td>
+<td>Tells you if your local version is up-to-date compared with the version on GitHub.</td>
+</tr>
+<tr class="odd">
+<td>git log -p</td>
+<td>-p is patch or diff</td>
+</tr>
+<tr class="even">
+<td>git log -p HEAD..origin/master</td>
+<td>What changed remotely?</td>
+</tr>
+<tr class="odd">
+<td>git commit . -v</td>
+<td>What is in your commit?</td>
+</tr>
+<tr class="even">
+<td>gitk</td>
+<td>A GUI with a git file map</td>
+</tr>
+<tr class="odd">
+<td>git &lt;command&gt; –help</td>
+<td>Provides help for the specific command</td>
+</tr>
+<tr class="even">
+<td>git pull –rebase</td>
+<td>Avoids merge commits</td>
+</tr>
+<tr class="odd">
+<td>git blame &lt;filename&gt;</td>
+<td>To see who last edited each line</td>
+</tr>
+</tbody>
+</table>
+<p>For even more commands, see <a href="http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf">here</a>.</p>
 
 
 
