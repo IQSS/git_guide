@@ -34,7 +34,7 @@
     "href": "sign_up.html",
     "title": "2  Sign Up / Login",
     "section": "",
-    "text": "To begin using Overleaf, visit the website overleaf.com and either sign up for a new account or log in if you already have one. Use your Harvard Google account, as that will provide you with access to Overleaf’s premium subscription, and free templates.",
+    "text": "To sign up for GitHub, visit the website and create an account. If you already have an account, you can log in and enter your credentials.\nYou may be prompted to sign in with 2-Factor Authentication with an email or your phone number.",
     "crumbs": [
       "Getting Started with Git and GitHub",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sign Up / Login</span>"
