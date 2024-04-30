@@ -56,7 +56,7 @@
     "href": "clone_repo.html",
     "title": "4  Cloning a Repository",
     "section": "",
-    "text": "TO DO",
+    "text": "Sign into github.com\nGo to the repository of interest\nClick “clone or download” (green button, right side)\nClick “copy to clipboard” button (at right)\nOpen a terminal window on your computer\nType “cd” and the path to where you want your local copy of the files and hit return. For example, if I wanted the repository to be housed inside of a folder on my Desktop called R_Projects, I would type in the terminal “cd Desktop/R_Projects”\nType: “git clone &lt;paste from clipboard (ctrl-V or cmd-V)&gt;” and hit return\nNow you have a cloned (copy) of the repository on your disk\nEdit as you like",
     "crumbs": [
       "Getting Started with Git and GitHub",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Cloning a Repository</span>"
