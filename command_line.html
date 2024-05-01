@@ -252,30 +252,34 @@ ul.task-list li input[type="checkbox"] {
 <td>Tells you if your local version is up-to-date compared with the version on GitHub.</td>
 </tr>
 <tr class="odd">
-<td>git log -p</td>
-<td>-p is patch or diff</td>
+<td>git log</td>
+<td>This will print out a log of the commits for your repository. You may need to press Ctrl-Z to kill the process in the terminal when you are done looking at the log.</td>
 </tr>
 <tr class="even">
-<td>git log -p HEAD..origin/master</td>
-<td>What changed remotely?</td>
+<td>git log -p</td>
+<td>(-p is patch or diff) This will print the log as above, but also with the difference introduced in each commit. This can be especially useful if something broke and you want to see when/where you edited something.</td>
 </tr>
 <tr class="odd">
+<td>git log -p HEAD..origin/main</td>
+<td>Tells you what is different in the remote branch (origin/main) but not in your local branch. This can help you see what changes have been introduced since you last updated or pulled your local repository.</td>
+</tr>
+<tr class="even">
 <td>git commit . -v</td>
 <td>What is in your commit?</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>gitk</td>
 <td>A GUI with a git file map</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>git &lt;command&gt; –help</td>
 <td>Provides help for the specific command</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>git pull –rebase</td>
 <td>Avoids merge commits</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>git blame &lt;filename&gt;</td>
 <td>To see who last edited each line</td>
 </tr>
