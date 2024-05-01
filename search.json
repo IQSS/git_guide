@@ -80,7 +80,7 @@
     "section": "",
     "text": "6.1 Creating a repository on GitHub\nWhen you are signed into your GitHub account, there should be a left-hand dashboard that lists your repositories. At the top, there is a green “New” button, which you should press to create a new repository.\nGitHub will then have you enter a name for your repository and its description, and you can select whether you want this repo to be public or private.\nAdditionally, you can optionally add a “README” file. This is a file where you can add a longer, more detailed description of your repository that you either want your future self or others to read. This can describe the file structure, provide insights into your code and data, or other details that you may want to remember.\nAlso, you can add a .gitignore file. This tells git which files to ignore when you commit and push your documents. For instance, if you are writing a lot of R code, you may wish to make a .RProj, which will locally store information for you. But, you don’t want to push this to GitHub, so you would include this file in your .gitignore list. For more information see git’s documentation.\nYou may wish to add a license to let others know how they can use your code, if you choose to make it publically available.\nThen, press the green “Create repository” button at the bottom.",
     "crumbs": [
-      "Getting Started with Git and GitHub",
+      "Editing Repositories",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Creating a New Repository</span>"
     ]
   },
@@ -91,7 +91,7 @@
     "section": "",
     "text": "Sign into github.com\nGo to the repository of interest\nClick “clone or download” (green button, right side)\nClick “copy to clipboard” button (at right)\nOpen a terminal window on your computer\nType “cd” and the path to where you want your local copy of the files and hit return. For example, if I wanted the repository to be housed inside of a folder on my Desktop called R_Projects, I would type in the terminal “cd Desktop/R_Projects”\nType: “git clone &lt;paste from clipboard (ctrl-V or cmd-V)&gt;” and hit return\nNow you have a cloned (copy) of the repository on your disk\nEdit as you like",
     "crumbs": [
-      "Getting Started with Git and GitHub",
+      "Editing Repositories",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cloning a Repository</span>"
     ]
   },
@@ -102,7 +102,7 @@
     "section": "",
     "text": "8.1 When you are the only one editing at the time:\nWhen finished with an editing session:\nNext time you are ready to edit: Pull, then edit as you like, then Commit and Push.",
     "crumbs": [
-      "Editing Existing Repositories",
+      "Editing Repositories",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
@@ -113,7 +113,7 @@
     "section": "",
     "text": "Pull: in the terminal window, type “git pull”\n\n\n\nThis merges in any changes someone else made to the repo\n\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis prepares your changes for uploading\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository",
     "crumbs": [
-      "Editing Existing Repositories",
+      "Editing Repositories",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
@@ -124,7 +124,7 @@
     "section": "8.2 When someone else is also editing (a different part of the file):",
     "text": "8.2 When someone else is also editing (a different part of the file):\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis protects your changes\n\n\n\nPull: in the terminal window, type “git pull”\n\n\n\nThis merges in what your friend did\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository\n\n\n\nIf you try pulling without committing, you will get an error.",
     "crumbs": [
-      "Editing Existing Repositories",
+      "Editing Repositories",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
@@ -135,7 +135,7 @@
     "section": "8.3 When someone else (unfortunately) edits the same line as you",
     "text": "8.3 When someone else (unfortunately) edits the same line as you\nYou must resolve these differences!\n\n\nPull: in the terminal window, type “git pull”\n\n\n\nYou will get a “merge conflict” error message\n\n\n\nEdit your file. You will see something like this:  &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;  passage written by person 1  ===========  passage written by person 2  &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; \n\n\nRemove one of the passages, as well as the &lt;&lt;&lt;, ===, and &gt;&gt;&gt; symbols.\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis prepares your changes for uploading\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository",
     "crumbs": [
-      "Editing Existing Repositories",
+      "Editing Repositories",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
@@ -146,7 +146,7 @@
     "section": "",
     "text": "Additional arguments in the command line include:\n\n\n\n\n\n\n\nCommand\nFunction\n\n\n\n\ngit add new_file\nTells git to include a new file on your disk, in the remote repository. Then commit and push as above.\n\n\ngit status\nTells you if your local version is up-to-date compared with the version on GitHub.\n\n\ngit log\nThis will print out a log of the commits for your repository. You may need to press Ctrl-Z to kill the process in the terminal when you are done looking at the log.\n\n\ngit log -p\n(-p is patch or diff) This will print the log as above, but also with the difference introduced in each commit. This can be especially useful if something broke and you want to see when/where you edited something.\n\n\ngit log -p HEAD..origin/main\nTells you what is different in the remote branch (origin/main) but not in your local branch. This can help you see what changes have been introduced since you last updated or pulled your local repository.\n\n\ngit commit . -v\nWhat is in your commit?\n\n\ngitk\nA GUI with a git file map\n\n\ngit &lt;command&gt; –help\nProvides help for the specific command\n\n\ngit pull –rebase\nAvoids merge commits\n\n\ngit blame &lt;filename&gt;\nTo see who last edited each line\n\n\n\n For even more commands, see here.",
     "crumbs": [
-      "Editing Existing Repositories",
+      "Editing Repositories",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Command Line Arguments</span>"
     ]
   },
