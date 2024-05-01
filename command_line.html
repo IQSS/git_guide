@@ -277,23 +277,19 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>git commit . -v</td>
-<td>What is in your commit?</td>
+<td>The “.” means that everything will be included in your commit. The “-v” stands for “verbose” and means that git will add a description of the changes veing committed to the commit message.</td>
 </tr>
 <tr class="odd">
-<td>gitk</td>
-<td>A GUI with a git file map</td>
+<td>git &lt;command&gt; --help</td>
+<td>Provides help documentation for the specific command</td>
 </tr>
 <tr class="even">
-<td>git &lt;command&gt; –help</td>
-<td>Provides help for the specific command</td>
-</tr>
-<tr class="odd">
 <td>git pull –rebase</td>
-<td>Avoids merge commits</td>
+<td>Avoids merge commits in that this will rewrite the commit history, adding your changes directly onto the latest changes in the remote repository. This can be cleaner, but should be used with caution.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>git blame &lt;filename&gt;</td>
-<td>To see who last edited each line</td>
+<td>This will print out the commit, user and timestamp for each line of the file. This can show you when and by whom edits were made.</td>
 </tr>
 </tbody>
 </table>
