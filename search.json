@@ -155,7 +155,7 @@
     "href": "resources.html",
     "title": "10  Learning Resources",
     "section": "",
-    "text": "Full Git documentation\nGitHub documentation\nProfessor Matt Blackwell has a great guide for getting started with R, R Studio, Git, and Github that we highly recommend if you need additional guidance",
+    "text": "Full Git documentation\nGitHub documentation\nProfessor Matt Blackwell has a great guide for getting started with R, R Studio, Git, and Github that we highly recommend if you need additional guidance.\nWhile geared towards R users, here is a guide that also includes very detailed information about Git and GitHub.",
     "crumbs": [
       "Resources",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Learning Resources</span>"
