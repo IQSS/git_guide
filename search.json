@@ -67,7 +67,7 @@
     "href": "connect.html",
     "title": "5  Connecting Your Git and GitHub",
     "section": "",
-    "text": "TO DO",
+    "text": "To configure your Git and GitHub accounts to connect, run these two lines in your terminal:\n\ngit config –global user.name “YOUR USERNAME”\ngit config –global user.mail “your.email@example.com”\n\nYou may need to authenticate your account using the instructions from the previous page.",
     "crumbs": [
       "Getting Started with Git and GitHub",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Connecting Your Git and GitHub</span>"
