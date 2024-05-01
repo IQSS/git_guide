@@ -30,113 +30,124 @@
     ]
   },
   {
+    "objectID": "install_git.html",
+    "href": "install_git.html",
+    "title": "2  Installing Git",
+    "section": "",
+    "text": "TO DO",
+    "crumbs": [
+      "Getting Started with Git and GitHub",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing Git</span>"
+    ]
+  },
+  {
     "objectID": "sign_up.html",
     "href": "sign_up.html",
-    "title": "2  Sign Up / Login",
+    "title": "3  Sign Up / Login",
     "section": "",
     "text": "To sign up for GitHub, visit the website and create an account. If you already have an account, you can log in and enter your credentials.\nYou may be prompted to sign in with 2-Factor Authentication with an email or your phone number.",
     "crumbs": [
       "Getting Started with Git and GitHub",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sign Up / Login</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sign Up / Login</span>"
     ]
   },
   {
     "objectID": "create_repo.html",
     "href": "create_repo.html",
-    "title": "3  Creating a New Repository",
+    "title": "4  Creating a New Repository",
     "section": "",
-    "text": "3.1 Creating a repository on GitHub\nWhen you are signed into your GitHub account, there should be a left-hand dashboard that lists your repositories. At the top, there is a green “New” button, which you should press to create a new repository.\nGitHub will then have you enter a name for your repository and its description, and you can select whether you want this repo to be public or private.\nAdditionally, you can optionally add a “README” file. This is a file where you can add a longer, more detailed description of your repository that you either want your future self or others to read. This can describe the file structure, provide insights into your code and data, or other details that you may want to remember.\nAlso, you can add a .gitignore file. This tells git which files to ignore when you commit and push your documents. For instance, if you are writing a lot of R code, you may wish to make a .RProj, which will locally store information for you. But, you don’t want to push this to GitHub, so you would include this file in your .gitignore list. For more information see git’s documentation.\nYou may wish to add a license to let others know how they can use your code, if you choose to make it publically available.\nThen, press the green “Create repository” button at the bottom.",
+    "text": "4.1 Creating a repository on GitHub\nWhen you are signed into your GitHub account, there should be a left-hand dashboard that lists your repositories. At the top, there is a green “New” button, which you should press to create a new repository.\nGitHub will then have you enter a name for your repository and its description, and you can select whether you want this repo to be public or private.\nAdditionally, you can optionally add a “README” file. This is a file where you can add a longer, more detailed description of your repository that you either want your future self or others to read. This can describe the file structure, provide insights into your code and data, or other details that you may want to remember.\nAlso, you can add a .gitignore file. This tells git which files to ignore when you commit and push your documents. For instance, if you are writing a lot of R code, you may wish to make a .RProj, which will locally store information for you. But, you don’t want to push this to GitHub, so you would include this file in your .gitignore list. For more information see git’s documentation.\nYou may wish to add a license to let others know how they can use your code, if you choose to make it publically available.\nThen, press the green “Create repository” button at the bottom.",
     "crumbs": [
       "Getting Started with Git and GitHub",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Creating a New Repository</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Creating a New Repository</span>"
     ]
   },
   {
     "objectID": "clone_repo.html",
     "href": "clone_repo.html",
-    "title": "4  Cloning a Repository",
+    "title": "5  Cloning a Repository",
     "section": "",
     "text": "Sign into github.com\nGo to the repository of interest\nClick “clone or download” (green button, right side)\nClick “copy to clipboard” button (at right)\nOpen a terminal window on your computer\nType “cd” and the path to where you want your local copy of the files and hit return. For example, if I wanted the repository to be housed inside of a folder on my Desktop called R_Projects, I would type in the terminal “cd Desktop/R_Projects”\nType: “git clone &lt;paste from clipboard (ctrl-V or cmd-V)&gt;” and hit return\nNow you have a cloned (copy) of the repository on your disk\nEdit as you like",
     "crumbs": [
       "Getting Started with Git and GitHub",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Cloning a Repository</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Cloning a Repository</span>"
     ]
   },
   {
     "objectID": "auth.html",
     "href": "auth.html",
-    "title": "5  Authorization",
+    "title": "6  Authorization",
     "section": "",
     "text": "For some git actions, you may be required to input git credentials. As of 2021, GitHub no longer accepts your password for git actions, meaning that if asked for your credentials, the terminal won’t accept your password for cloning the repository. Instead, you need to make a PAT (Personal Access Token). To do this:\n\nGo to your profile in GitHub &gt; Developer settings (bottom left) &gt; Personal Access Tokens (left) &gt; Tokens (classic) &gt; Generate new token (upper right).\nTHEN, COPY AND PASTE YOUR TOKEN SOMEWHERE SECURE.\nOnce you do this, when you go back to the Personal access tokens page, your new PAT should show up.\nUse the copy and pasted token for the password entry above in the terminal, and your repository should clone to your local computer.\n\nThere are additional tools that you may choose to use to make this process easier, such as Git Credential Manager. These tools can allow you to cache your credentials so that you only need to authenticate your GitHub account once, and your credentials will be remembered for the future.",
     "crumbs": [
       "Getting Started with Git and GitHub",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Authorization</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Authorization</span>"
     ]
   },
   {
     "objectID": "editing.html",
     "href": "editing.html",
-    "title": "6  Editing",
+    "title": "7  Editing",
     "section": "",
-    "text": "6.1 When you are the only one editing at the time:\nWhen finished with an editing session:\nNext time you are ready to edit: Pull, then edit as you like, then Commit and Push.",
+    "text": "7.1 When you are the only one editing at the time:\nWhen finished with an editing session:\nNext time you are ready to edit: Pull, then edit as you like, then Commit and Push.",
     "crumbs": [
       "Editing Existing Repositories",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Editing</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
   {
     "objectID": "editing.html#when-you-are-the-only-one-editing-at-the-time",
     "href": "editing.html#when-you-are-the-only-one-editing-at-the-time",
-    "title": "6  Editing",
+    "title": "7  Editing",
     "section": "",
     "text": "Pull: in the terminal window, type “git pull”\n\n\n\nThis merges in any changes someone else made to the repo\n\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis prepares your changes for uploading\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository",
     "crumbs": [
       "Editing Existing Repositories",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Editing</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
   {
     "objectID": "editing.html#when-someone-else-is-also-editing-a-different-part-of-the-file",
     "href": "editing.html#when-someone-else-is-also-editing-a-different-part-of-the-file",
-    "title": "6  Editing",
-    "section": "6.2 When someone else is also editing (a different part of the file):",
-    "text": "6.2 When someone else is also editing (a different part of the file):\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis protects your changes\n\n\n\nPull: in the terminal window, type “git pull”\n\n\n\nThis merges in what your friend did\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository\n\n\n\nIf you try pulling without committing, you will get an error.",
+    "title": "7  Editing",
+    "section": "7.2 When someone else is also editing (a different part of the file):",
+    "text": "7.2 When someone else is also editing (a different part of the file):\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis protects your changes\n\n\n\nPull: in the terminal window, type “git pull”\n\n\n\nThis merges in what your friend did\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository\n\n\n\nIf you try pulling without committing, you will get an error.",
     "crumbs": [
       "Editing Existing Repositories",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Editing</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
   {
     "objectID": "editing.html#when-someone-else-unfortunately-edits-the-same-line-as-you",
     "href": "editing.html#when-someone-else-unfortunately-edits-the-same-line-as-you",
-    "title": "6  Editing",
-    "section": "6.3 When someone else (unfortunately) edits the same line as you",
-    "text": "6.3 When someone else (unfortunately) edits the same line as you\nYou must resolve these differences!\n\n\nPull: in the terminal window, type “git pull”\n\n\n\nYou will get a “merge conflict” error message\n\n\n\nEdit your file. You will see something like this:  &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;  passage written by person 1  ===========  passage written by person 2  &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; \n\n\nRemove one of the passages, as well as the &lt;&lt;&lt;, ===, and &gt;&gt;&gt; symbols.\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis prepares your changes for uploading\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository",
+    "title": "7  Editing",
+    "section": "7.3 When someone else (unfortunately) edits the same line as you",
+    "text": "7.3 When someone else (unfortunately) edits the same line as you\nYou must resolve these differences!\n\n\nPull: in the terminal window, type “git pull”\n\n\n\nYou will get a “merge conflict” error message\n\n\n\nEdit your file. You will see something like this:  &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;  passage written by person 1  ===========  passage written by person 2  &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; \n\n\nRemove one of the passages, as well as the &lt;&lt;&lt;, ===, and &gt;&gt;&gt; symbols.\n\n\nCommit: in the terminal window, type “git commit -am ”\n\n\n\nThis prepares your changes for uploading\n\n\n\nPush: in the terminal window, type “git push”\n\n\n\nThis uploads your changes to the GitHub repository",
     "crumbs": [
       "Editing Existing Repositories",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Editing</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Editing</span>"
     ]
   },
   {
     "objectID": "command_line.html",
     "href": "command_line.html",
-    "title": "7  Command Line Arguments",
+    "title": "8  Command Line Arguments",
     "section": "",
     "text": "Additional arguments in the command line include:\n\n\n\n\n\n\n\nCommand\nFunction\n\n\n\n\ngit add new_file\nTells git to include a new file on your disk, in the remote repository. Then commit and push as above.\n\n\ngit status\nTells you if your local version is up-to-date compared with the version on GitHub.\n\n\ngit log\nThis will print out a log of the commits for your repository. You may need to press Ctrl-Z to kill the process in the terminal when you are done looking at the log.\n\n\ngit log -p\n(-p is patch or diff) This will print the log as above, but also with the difference introduced in each commit. This can be especially useful if something broke and you want to see when/where you edited something.\n\n\ngit log -p HEAD..origin/main\nTells you what is different in the remote branch (origin/main) but not in your local branch. This can help you see what changes have been introduced since you last updated or pulled your local repository.\n\n\ngit commit . -v\nWhat is in your commit?\n\n\ngitk\nA GUI with a git file map\n\n\ngit &lt;command&gt; –help\nProvides help for the specific command\n\n\ngit pull –rebase\nAvoids merge commits\n\n\ngit blame &lt;filename&gt;\nTo see who last edited each line\n\n\n\n For even more commands, see here.",
     "crumbs": [
       "Editing Existing Repositories",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Command Line Arguments</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Command Line Arguments</span>"
     ]
   },
   {
     "objectID": "resources.html",
     "href": "resources.html",
-    "title": "8  Learning Resources",
+    "title": "9  Learning Resources",
     "section": "",
     "text": "Full Git documentation\nGitHub documentation",
     "crumbs": [
       "Resources",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Learning Resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Learning Resources</span>"
     ]
   }
 ]
